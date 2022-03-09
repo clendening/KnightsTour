@@ -1,0 +1,67 @@
+# Compile of charge.sv was successful.
+# Compile of cmd_proc.sv was successful.
+# Compile of inert_intf.sv was successful.
+# Compile of inertial_integrator.sv was successful.
+# Compile of IR_intf.sv was successful.
+# Compile of KnightPhysics.sv was successful.
+# Compile of KnightsTour.sv was successful.
+# Compile of KnightsTour_test2_tour.sv was successful.
+# Compile of MtrDrv.sv was successful.
+# Compile of PB_release.sv was successful.
+# Compile of PID.sv was successful.
+# Compile of PWM11.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of reset_synch.sv was successful.
+# Compile of SPI_iNEMO4.sv was successful.
+# Compile of SPI_mnrch.sv was successful.
+# Compile of tb_tasks.sv was successful.
+# Compile of TourCmd.sv was successful.
+# Compile of UART.v was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# Compile of TourLogic.sv was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui work.KnightsTour_test2
+# vsim -gui work.KnightsTour_test2 
+# Start time: 12:50:58 on Dec 15,2021
+# Loading sv_std.std
+# Loading work.tb_tasks
+# Loading work.KnightsTour_test2
+# Loading work.KnightsTour
+# Loading work.reset_synch
+# Loading work.UART_wrapper
+# Loading work.UART
+# Loading work.UART_tx
+# Loading work.UART_rx
+# Loading work.cmd_proc
+# Loading work.TourLogic
+# Loading work.TourCmd
+# Loading work.inert_intf
+# Loading work.SPI_mnrch
+# Loading work.inertial_integrator
+# Loading work.PID
+# Loading work.MtrDrv
+# Loading work.PWM11
+# Loading work.IR_intf
+# Loading work.PWM3
+# Loading work.charge
+# Loading work.RemoteComm
+# Loading work.KnightPhysics
+# Loading work.SPI_iNEMO4
+# Loading work.inverse_PWM11e
+add wave -position insertpoint sim:/KnightsTour_test2/iDUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: aseigler  Hostname: WIN-8048  ProcessID: 13552
+#           Attempting to use alternate WLF file "./wlftbr1gbk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbr1gbk
+run -all
+# Init Complete
+# Calibrate Complete
+# ERROR: timed out waiting for start_tour
+# ** Note: $stop    : C:/Users/Patron/Documents/ece551/final_everything_4eels/tb_tasks.sv(12)
+#    Time: 13234125 ps  Iteration: 1  Region: /tb_tasks::timeOut
+# Break in NamedBeginStat timeout at C:/Users/Patron/Documents/ece551/final_everything_4eels/tb_tasks.sv line 12
+# End time: 12:56:06 on Dec 15,2021, Elapsed time: 0:05:08
+# Errors: 0, Warnings: 4
